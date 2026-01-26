@@ -1,32 +1,8 @@
-# Python Learning Repository 🐍
+# Python 🐍
 
-Welcome to my Python learning repository.
+All **Python theory and notes** are available in Google Drive.
 
-All my Python notes, practice files, and learning material are stored in **Google Drive** for easy access and updates.
+📂 **Google Docs (View Only):**  
+🔗 https://drive.google.com/drive/folders/1DLeWJ7BoCBAHS5Ea-6EoAHvNLTGDQBCh?usp=drive_link
 
----
-
-## 📂 Python Learning Material (View Only)
-
-Click the button below to view the complete Python content:
-
-🔗 **[Open Python Learning Drive Folder](https://drive.google.com/drive/folders/1DLeWJ7BoCBAHS5Ea-6EoAHvNLTGDQBCh?usp=drive_link)**
-
-> ⚠️ Note:  
-> This folder is **view-only**.  
-> You can read and explore the content but **cannot edit or download restricted files**.
-
----
-
-## 📌 What’s Included?
-- Python basics
-- Variables & data types
-- Practice examples
-- Notes and explanations
-- Future updates will be added regularly
-
----
-
-## 👨‍💻 Author
-**Haram Essani**  
-Learning Python step by step 🚀
+> This folder is view-only. You can read the content but cannot edit it.
