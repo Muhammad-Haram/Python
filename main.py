@@ -26,5 +26,15 @@ ind = "python"
 # string slicing
 sl = "python language"
 
-print(sl[0:7:1])
-print(sl[7::1])
+print(sl[0:6:1])
+# print(sl[7::])
+
+# Type convertion
+con = 12
+con = float(con)
+print(type(con))
+
+bol = -1
+bol = bool(bol)
+print(type(bol))
+print(bol)
