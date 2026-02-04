@@ -174,3 +174,30 @@ print(12 < 15 and 12 < 14 or 12 < 14 )
 #     print("very hot")
 
 
+# for loop
+
+# rng = range(15,2,-1)
+
+# for i in rng:
+#     print(f"hello world no {i}")
+
+# for i in range(31):
+#     print(f"hello {i}")
+
+
+# for i in range(19,10,-1):
+#     print(i)
+
+# for i in range(-5,-16,-1):
+#     print(i)
+
+# for i in range(1,11):
+#     print(f"2 x {i} = {2 * i}")
+
+# for i in range(10,101,10):
+#     print(i)
+
+# table = int(input("what number of table you want"))
+
+# for l in range(table,table*10+1,table):
+#     print(l)
