@@ -85,10 +85,92 @@ num3 -= 20
 
 # print(num1 == num2)
 # print(num1 != num2)
-print(45 > 35)
-print(35 <= 35)
+# print(45 > 35)
+# print(35 <= 35)
 
 # logical operator 
 
 print(12 < 15 and 12 < 14 or 12 < 14 )
+
+# if/else 
+
+# con = 9
+# if con > 10:
+#     print(f"{con} is greater then 10")
+# else:
+#     print(f"{con} is not greater then 10")
+
+
+# icecream_amount = int(input("please provide me the money for icecream:- "))
+
+# if icecream_amount == 10:
+#     print("i will buy a Magnum")
+
+# elif icecream_amount == 20:
+#     print("i will buy a cornetto")
+
+# elif icecream_amount == 30:
+#     print("i will buy a cornetto")
+
+# else:
+#     print("i will buy a double Magnum")
+
+# number1 = 0.0
+# number2 = 0
+
+# if number1 > number2:
+#     print(f"{number1} is greater then {number2}")
+# elif number2 > number1:
+#     print(f"{number2} is greater then {number1}")
+# else:
+#     print(f"{number1} and {number2} are same")
+
+
+# even or odd
+
+# givenNumber = int(input("Number"))
+
+# if givenNumber%2 == 0:
+#     print('Even')
+# else:
+#     print('Odd')
+
+# valid voter
+
+# name_of_voter = input("tell me your name")
+# age_of_voter = int(input("tell me your age"))
+
+# if (age_of_voter >= 18):
+#     print(f"{name_of_voter} are a valid voter")
+# else:
+#     print(f"{name_of_voter} your age is {age_of_voter} you are able for a vote after {18 - age_of_voter} years")
+
+
+# leap year 
+# year = int(input("tell me your birth year"))
+
+# if year % 100 == 0 and year% 400 == 0:
+#     print("leap year")
+# elif year% 100 !=0 and year% 4 ==0:
+#     print("leap year")
+# else:
+#     print("not a leap year")
+
+# temprature
+
+# temp = int(input("enter temprature"))
+
+# if temp <= 0:
+#     print("freezing cold")
+# elif temp >= 0 and temp < 10:
+#     print("very cold")
+# elif temp >= 10 and temp < 20:
+#     print("cold")
+# elif temp >= 20 and temp < 30:
+#     print("pleasant")
+# elif temp >= 30 and temp < 40:
+#     print("hot")
+# elif temp > 40:
+#     print("very hot")
+
 
