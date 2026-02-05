@@ -201,3 +201,26 @@ print(12 < 15 and 12 < 14 or 12 < 14 )
 
 # for l in range(table,table*10+1,table):
 #     print(l)
+
+
+# aa = "muhammad"
+
+# for i in range(8):
+#     print(aa[i])
+
+# s = "abcdefghijklmnopqrstuvwxyz"
+
+# for i in range(len(s)):
+#     print(s[i])
+
+# s = "abcdefghijklmnopqrstuvwxyz"
+# for i in s:
+#     print(i)
+
+for i in range(22):
+    if i == 21:
+        print("break executed")
+        break
+    print(i)
+else:
+    print("break not executed")
