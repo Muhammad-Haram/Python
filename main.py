@@ -217,10 +217,104 @@ print(12 < 15 and 12 < 14 or 12 < 14 )
 # for i in s:
 #     print(i)
 
-for i in range(22):
-    if i == 21:
-        print("break executed")
-        break
-    print(i)
-else:
-    print("break not executed")
+# for i in range(22):
+#     if i == 21:
+#         print("break executed")
+#         break
+#     print(i)
+# else:
+#     print("break not executed")
+
+# n = int(input("tell me a number"))
+
+# for i in range(n):
+#     print(f"hello world {n}")
+
+# for i in range(1,n+1):
+#     print(i)
+
+# for i in range(n,0,-1):
+#     print(i)
+
+# for i in range(n,n*10+1,n):
+#     print(i)
+
+# sums = 1
+# for i in range(1,n+1):
+#     sums += i
+
+# print(sums)
+
+# for i in range(1,n+1):
+#     sums = sums * i
+
+# print(sums)
+
+
+# n = int(input("tell me a number"))
+
+# even = 0
+# odd = 0
+
+# for i in range(1,n+1):
+#    if i%2 == 0:
+#       even = even + i
+#    else:
+#       odd = odd + i
+
+# print(f'sum of the even and odd number are {even}, {odd}')
+
+# n = int(input("tell me a number"))
+# for i in range(1,n+1):
+#     if n%i == 0:
+#         print(i)
+
+# n = int(input("tell me a number"))
+# perfect = 0
+# for i in range(1,n):
+#     if n%i == 0:
+#         perfect = perfect + i
+
+# if perfect == n:
+#     print("prefect number")
+# else:
+#     print("not a perfect number")
+
+# n = int(input("tell me a number"))
+# count = 0
+# for i in range(1,n+1):
+#     if n%i == 0:
+#         count = count + 1
+
+# print(count)
+# if count == 2:
+#     print("prime num")
+# else:
+#     print("not a prime num")
+
+# s = input("whats your name")
+# concat = ""
+
+# for i in range(len(s)-1,-1,-1):
+#     concat = concat + s[i]
+
+# if (concat == s):
+#     print("your name is pallindrome")
+# else:
+#     print("your name is not a pallindrome")
+
+mixStr = "!@^&*(()hhaxhajbx1sq7739221"
+
+digit = 0
+characters = 0
+special_characters = 0
+
+for i in mixStr:
+    if i.isdigit():
+        digit += 1
+    elif i.isalpha():
+        characters += 1
+    else:
+        special_characters += 1
+
+print(digit,characters,special_characters)
