@@ -90,7 +90,7 @@ num3 -= 20
 
 # logical operator 
 
-print(12 < 15 and 12 < 14 or 12 < 14 )
+# print(12 < 15 and 12 < 14 or 12 < 14 )
 
 # if/else 
 
@@ -303,18 +303,55 @@ print(12 < 15 and 12 < 14 or 12 < 14 )
 # else:
 #     print("your name is not a pallindrome")
 
-mixStr = "!@^&*(()hhaxhajbx1sq7739221"
+# mixStr = "!@^&*(()hhaxhajbx1sq7739221"
 
-digit = 0
-characters = 0
-special_characters = 0
+# digit = 0
+# characters = 0
+# special_characters = 0
 
-for i in mixStr:
-    if i.isdigit():
-        digit += 1
-    elif i.isalpha():
-        characters += 1
-    else:
-        special_characters += 1
+# for i in mixStr:
+#     if i.isdigit():
+#         digit += 1
+#     elif i.isalpha():
+#         characters += 1
+#     else:
+#         special_characters += 1
 
-print(digit,characters,special_characters)
+# print(digit,characters,special_characters)
+
+# w = 1
+
+# while w <= 5:
+#     print(f"hello world {w}")
+#     w = w + 1
+
+# print(2//10)
+
+# wh = int(input('num'))
+
+# while wh > 0:
+#     print(wh % 10)
+#     wh = wh // 10
+
+
+# wh = int(input('num'))
+# rev =0
+
+# while wh > 0:
+#     rev = rev * 10 + wh % 10
+#     wh = wh // 10
+# print(rev)
+
+
+wh = int(input('num'))
+rev = 0
+wh_copy = wh
+
+while wh > 0:
+    rev = rev * 10 + wh % 10
+    wh = wh // 10
+
+if wh_copy == rev:
+    print('pallindromic num')
+else:
+    print('non pallindromic num')
