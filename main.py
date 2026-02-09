@@ -343,15 +343,56 @@ num3 -= 20
 # print(rev)
 
 
-wh = int(input('num'))
-rev = 0
-wh_copy = wh
+# wh = int(input('num'))
+# rev = 0
+# wh_copy = wh
 
-while wh > 0:
-    rev = rev * 10 + wh % 10
-    wh = wh // 10
+# while wh > 0:
+#     rev = rev * 10 + wh % 10
+#     wh = wh // 10
 
-if wh_copy == rev:
-    print('pallindromic num')
-else:
-    print('non pallindromic num')
+# if wh_copy == rev:
+#     print('pallindromic num')
+# else:
+#     print('non pallindromic num')
+
+
+# functions 
+
+# def hello():
+#     print("hello")
+
+# hello()
+
+# parameter and arrgument in functions
+
+# the thing you want to accept is parameter
+# the thing you provide to parameter is arrgument
+
+# def sum(a,b):
+#     print(f"the sum of {a} and {b} = {a + b}")
+
+# sum(12,12)
+
+
+# pallindrome function
+
+
+# def pallindrome (str):
+
+#     reverse_string = ""
+
+#     for i in range(len(str)-1,-1,-1):
+#         reverse_string = reverse_string + str[i]
+    
+#     if (reverse_string == str):
+#         print(f"pallindrome")
+#     else:
+#         print(f"not pallindrome")
+
+# # pallindrome("haram")
+
+# def return_func():
+#     return "return val"
+
+# print(return_func())
