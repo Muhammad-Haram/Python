@@ -634,3 +634,19 @@ for i in m_dic2:
         m_dic1[i] = m_dic2[i]
 
 print(m_dic1)
+
+# exception handling
+a = int(input("write number for division"))
+
+try:
+    print(10/a)
+# except ZeroDivisionError:
+except Exception as err:
+    print(f"sorry we cannot bcz {err}")
+else:
+    print("good there is no error")
+finally:
+    print("run no metter what")
+
+
+print(m_dic1)
