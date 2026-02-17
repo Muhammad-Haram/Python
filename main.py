@@ -396,3 +396,241 @@ num3 -= 20
 #     return "return val"
 
 # print(return_func())
+
+
+# list -------------------
+
+# a = [11,12,13,14,15,16,17,18,19,20]
+
+# print(len(a))
+# a[0] = 10
+# print(a[0:5:1])
+
+# 1st way to run loop using index
+
+# for i in range(len(a)):
+#     print(i) #index
+#     print(a[i]) #values
+
+# 2nd way directly on values
+
+# for i in a:
+#     print(i)
+
+
+# a = [11,12,13,14,15,16,17,18,19,20,20]
+
+# a.append("haram") #add value in last of the list (value)
+# a.insert(0,10) #add value ("index","value")
+# a.extend([21,22,23,24,25]) #add multiple values in last of the list ([value,value,value])
+# print(a)
+
+# names = ["haram","harris","hasnain","kivi","wahid","saleem"]
+
+# names.remove("haram") #remove the first occurrneces of haram
+# has = names.pop(2) # remove the store the element
+# print(has)
+
+# index = names.index("haram")
+# print(index)
+
+# print(names)
+
+# count = a.count(20)
+# print(count)
+
+# num = [1,5,6,9,2,4,3,10]
+
+# num.sort()
+# print(num)
+
+# list questions 
+
+# negative and positive values
+
+# pos_neg = [-45,12,3,4,-5,-6,6,8,-8,-100]
+
+# print("positive values")
+# for i in pos_neg:
+#     if i >= 0:
+#         print(i)
+
+# print("negative values")
+# for i in pos_neg:
+#     if i < 0:
+#         print(i)
+
+
+# mean = [1,2,3,4]
+
+# mean_total = 0
+
+# for i in range(len(mean)):
+#     mean_total = mean_total + mean[i]
+
+# print(mean_total/len(mean))
+
+# fg_number = [100,200,500,300,50,60,1000,20,10,40]
+
+# l_number = fg_number[0]
+# sl_number = fg_number[0]
+# index = 0
+
+# for i in range(len(fg_number)):
+#     if  fg_number[i] > l_number:
+#         l_number = fg_number[i]
+
+#         index = i
+
+# print(l_number,index)
+
+
+# f2l_number = [10,12,1,2,95,3,4,5,6,34,0]
+# larget_number = f2l_number[0]
+# second_larget_number = f2l_number[0]
+
+# for i in f2l_number:
+#     if i > larget_number:
+#         second_larget_number = larget_number
+#         larget_number = i
+#     elif i > second_larget_number:
+#         second_larget_number = i
+
+# print(larget_number)
+# print(second_larget_number)
+
+# sorted = [1,2,3,4,5,6,7,8,4,9,10]
+ 
+# for i in range(len(sorted)-1):
+#     if(sorted[i] <= sorted[i + 1]):
+#         continue
+#     else:
+#         print('not sorted')
+#         break
+# else:
+#     print('sorted')
+
+# tuple 
+
+tup = (1,2,3,4,5,6,6,6,print("tuple"),"haram",True)
+
+# print(type(tup))
+
+# print(tup[4])
+
+# for i in tup:
+#     print(i)
+
+# tuple have two methods one for index findin and one is for count
+
+# index = tup.count(6)
+# print(index)
+
+# tuple unpacking 
+
+# t1,t2,t3,t4,t5,t6 = (1,2,3,4,5,6)
+
+# print(t3)
+
+# print(type(t3))
+
+
+# sets
+
+# s = {1,4,7,3,}
+# ss = {2,3,4,5,6,7,8}
+
+# # union = s.union(ss)
+# intersec = ss.symmetric_difference(s)
+
+# print(intersec)
+
+# sim = 100
+# sim2 = hash(sim)
+# print(sim2)
+
+# dictinory
+
+# d = { 
+#     "name":"haram",
+#     "age":"21",
+#     "location":"Jamshed road"
+#     }
+
+# print(d["name"])
+# print(d["age"])
+# print(d["location"])
+
+
+
+# d.update({"university":"MAJU"})
+
+# # we can perform "CRUD" opertion using dictinory
+
+
+# d["name"] = "haris" #updating
+# d["Subject"] = "AI" #creating
+# del d["Subject"] #delete
+
+# print(d)
+
+# treversing or iteration in dictionary
+
+# d = { 
+#     "name":"haram",
+#     "age":"21",
+#     "location":"Jamshed road"
+#     }
+
+# for i in d:
+#     print(d[i])
+
+# help(dict)
+
+
+# D_C1 = [1,2,3,4,5,6]
+
+# D_C2 = D_C1
+
+# D_C2[0] = "haram"
+
+# print(D_C1)
+
+# m_dic1 = {1:100,2:200,3:300,4:400}
+# m_dic2 = {4:500,5:500,6:600,7:700}
+
+# for i in m_dic2:
+#     m_dic1[i] = m_dic2[i]
+
+# print(m_dic1)
+
+# m_dic1 = {1:100,2:200,3:300,4:400}
+# m_dic2 = {4:500,5:500,6:600,7:700}
+
+# sum = 0
+
+# for i in m_dic1:
+#     sum += m_dic1[i]
+
+# print(sum)
+
+# f_elem = [1,1,1,1,3,3,3,2,2,2,4,4,4,56,7,8,9,0,0,0,0,0,0,0,0,0]
+# d = {}
+
+# for i in f_elem:
+#     if i in d:
+#         d[i] += 1
+#     else:
+#         d[i] = 1
+# print(d)
+
+m_dic1 = {1:100,2:200,3:300,4:400}
+m_dic2 = {4:500,5:500,6:600,7:700}
+
+for i in m_dic2:
+    if i in m_dic1:
+        m_dic1[i] += m_dic2[i]
+    else:
+        m_dic1[i] = m_dic2[i]
+
+print(m_dic1)
