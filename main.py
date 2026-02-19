@@ -624,29 +624,33 @@ tup = (1,2,3,4,5,6,6,6,print("tuple"),"haram",True)
 #         d[i] = 1
 # print(d)
 
-m_dic1 = {1:100,2:200,3:300,4:400}
-m_dic2 = {4:500,5:500,6:600,7:700}
+# m_dic1 = {1:100,2:200,3:300,4:400}
+# m_dic2 = {4:500,5:500,6:600,7:700}
 
-for i in m_dic2:
-    if i in m_dic1:
-        m_dic1[i] += m_dic2[i]
-    else:
-        m_dic1[i] = m_dic2[i]
+# for i in m_dic2:
+#     if i in m_dic1:
+#         m_dic1[i] += m_dic2[i]
+#     else:
+#         m_dic1[i] = m_dic2[i]
 
-print(m_dic1)
+# print(m_dic1)
 
-# exception handling
-a = int(input("write number for division"))
+# # exception handling
+# a = int(input("write number for division"))
 
-try:
-    print(10/a)
-# except ZeroDivisionError:
-except Exception as err:
-    print(f"sorry we cannot bcz {err}")
-else:
-    print("good there is no error")
-finally:
-    print("run no metter what")
+# try:
+#     print(10/a)
+# # except ZeroDivisionError:
+# except Exception as err:
+#     print(f"sorry we cannot bcz {err}")
+# else:
+#     print("good there is no error")
+# finally:
+#     print("run no metter what")
 
 
-print(m_dic1)
+# print(m_dic1)
+
+r = open('py.py','x')
+r.write("helloooooo1/n")
+r.close()
