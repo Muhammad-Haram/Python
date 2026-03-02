@@ -651,6 +651,18 @@ tup = (1,2,3,4,5,6,6,6,print("tuple"),"haram",True)
 
 # print(m_dic1)
 
-r = open('py.py','x')
-r.write("helloooooo1/n")
-r.close()
+# r = open('filename.txt','x')
+# r.write("helloooooo1/n")
+# r.close()
+
+# oop
+
+class FirstClass:
+    attribute_in_class = 19
+
+    def method_in_class(self):
+        print("abc")
+
+obj = FirstClass()
+
+FirstClass.method_in_class()
