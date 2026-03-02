@@ -512,7 +512,7 @@ num3 -= 20
 
 # tuple 
 
-tup = (1,2,3,4,5,6,6,6,print("tuple"),"haram",True)
+# tup = (1,2,3,4,5,6,6,6,print("tuple"),"haram",True)
 
 # print(type(tup))
 
@@ -657,12 +657,100 @@ tup = (1,2,3,4,5,6,6,6,print("tuple"),"haram",True)
 
 # oop
 
-class FirstClass:
-    attribute_in_class = 19
+# class FirstClass:
+#     attribute_in_class = 19
 
-    def method_in_class(self):
-        print("abc")
+#     def method_in_class(self):
+#         print("abc")
 
-obj = FirstClass()
+# obj = FirstClass()
 
-FirstClass.method_in_class()
+# obj2 = FirstClass()
+
+# print(obj2.attribute_in_class)
+# obj.method_in_class()
+
+
+# class FirstClass:
+#     attribute_in_class = 19
+
+#     def __init__(self,material,zips,pockets):
+#         self.material = material
+#         self.zips = zips
+#         self.pockets = pockets
+
+#     def show(self):
+#         print(self.material,self.pockets,self.zips)
+    
+
+# # obj = FirstClass()
+
+# # obj2 = FirstClass()
+
+# # print(obj2.attribute_in_class)
+
+# reeboook = FirstClass('LEATHER',5,7)
+# campus = FirstClass('NYLON',3,6)
+
+# reeboook.show()
+
+# class Animal:
+#     name = "lion" #class attribute
+
+#     def __init__(self,name):
+#         self.name = name #instance attribute
+        
+#     def show(self): #instance method
+#         print(self.name)
+
+#     @classmethod
+#     def classMethod(cls):  #class method
+#         print('hellooo')
+
+#     @staticmethod
+#     def staticMethod():  #static method
+#         print('static method')
+
+# oobj = Animal('elephent')
+
+# oobj.show()
+# oobj.classMethod()
+# oobj.staticMethod()
+
+
+# inheritance in oops ------------------------------
+
+# class File_One:
+#     f1 = 'files'
+#     def f1_def(self):
+#         print('directory')
+
+# class File_Two(File_One):
+#     pass
+
+# fileExcess1 = File_Two()
+
+# fileExcess1.f1_def()
+# print(fileExcess1.f1)
+
+
+# instences method in inheritance oops ---------------------------
+
+# class Dir_One:
+
+#     def __init__(self,name):
+#         self.name = name
+
+#     def show(self):
+#         print(f'your file name is {self.name}')
+
+# class Dir_Two(Dir_One):
+#     pass
+
+# whatsYourFileName = Dir_Two('Button.jsx')
+
+# whatsYourFileName.show()
+
+# Super keyword in inheritance oops ---------------------------
+
+
