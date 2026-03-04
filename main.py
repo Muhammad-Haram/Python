@@ -753,4 +753,28 @@ num3 -= 20
 
 # Super keyword in inheritance oops ---------------------------
 
+# class Dir_One:
+
+#     def __init__(self,name):
+#         self.name = name
+
+#     def show(self):
+#         print(f'your file name is {self.name}')
+
+# class Dir_Two(Dir_One):
+
+#     def __init__(self, name,extn):
+#         super().__init__(name)
+#         self.extn = extn
+
+#     def show(self):
+#         print(f'your file name is {self.name} and your extension is {self.extn}')
+
+# edit_in_Dir = Dir_One('Home.tsx')
+# edit_in_Dir2 = Dir_Two('main.py','.py')
+
+# edit_in_Dir.show()
+# edit_in_Dir2.show()
+
+# types of inheritance
 
