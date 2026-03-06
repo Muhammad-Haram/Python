@@ -778,3 +778,41 @@ num3 -= 20
 
 # types of inheritance
 
+# multiple inheritance
+
+# class Animal:
+#     def __init__(self,name):
+#         pass
+
+# class Human:
+#     def __init__(self,name,age):
+#         pass
+
+
+# class Robot(Human,Animal):
+#     nameR = "Robo"
+
+# obj = Robot()
+
+
+# multilevel inheritance
+
+# class Bag_Builders:  #Grand Parent Class
+#     def __init__(self,material):
+#         self.material = material
+
+# class Bag_Builders_Karschi(Bag_Builders):  #Parent Class
+#     def __init__(self,material,zips):
+#         super().__init__(material)
+#         self.zips = zips
+
+# class Bag_Builders_Lahore(Bag_Builders_Karschi): #Child Class
+#     def __init__(self,material,zips,pockets):
+#         super().__init__(material,zips)
+#         self.pockets = pockets
+
+
+# Reebok = Bag_Builders_Lahore('Leather',6,8)
+
+# print(Reebok.material,Reebok.zips,Reebok.pockets)
+
