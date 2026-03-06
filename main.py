@@ -776,9 +776,9 @@ num3 -= 20
 # edit_in_Dir.show()
 # edit_in_Dir2.show()
 
-# types of inheritance
+# types of inheritance -------------
 
-# multiple inheritance
+# multiple inheritance ----------------
 
 # class Animal:
 #     def __init__(self,name):
@@ -795,7 +795,7 @@ num3 -= 20
 # obj = Robot()
 
 
-# multilevel inheritance
+# multilevel inheritance ----------------
 
 # class Bag_Builders:  #Grand Parent Class
 #     def __init__(self,material):
@@ -815,4 +815,85 @@ num3 -= 20
 # Reebok = Bag_Builders_Lahore('Leather',6,8)
 
 # print(Reebok.material,Reebok.zips,Reebok.pockets)
+
+
+
+# Polymorphism ----------------
+
+# method overriding ----------------
+
+# class Ex1:
+#     def show(self):
+#         print('example 1')
+
+# class Ex2(Ex1):
+#     def show(self):
+#         print('example 2')
+
+# obj = Ex2()
+
+# obj.show()
+
+# duck typing ------------------
+
+# class Ex1:
+#     def show(self):
+#         print('example 1')
+
+# class Ex2():
+#     def show(self):
+#         print('example 2')
+
+
+# encapsulation -----------
+
+# class biscuit_Factory:
+#     __bis_name = "choc bis"
+#     def __shape_of_bis(self):
+#         print('square')
+
+# class biscuit_factor_child(biscuit_Factory):
+
+#     def show(self):
+#         print(super().__bis_name) #my child function can access biscuit name attribute
+
+# obj = biscuit_factor_child()
+# objjj = biscuit_Factory()
+
+# objjj.shape_of_bis()
+
+# print(obj.bis_name)
+
+# --------- after using __ doble underscore we cannot access att and method outside the class---------------
+
+# if you want to read a private attribute
+
+# class PA:
+#     __name = 'nameeee'
+
+#     def show(self):
+#         print(f'this is private att {PA.__name}') # You can read this att but cannot change this
+
+# objj = PA()
+# objj.show()
+
+# abstraction ------------------------
+
+from abc import ABC, abstractmethod
+
+
+class abstract(ABC):
+    @abstractmethod
+    def parameter(self):
+        pass
+
+
+class Square(abstract):
+    def __init__(self,side):
+        self.side = side
+
+    def parameter(self):
+        print('helloo')
+
+objj = Square(4)
 
