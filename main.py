@@ -879,21 +879,91 @@ num3 -= 20
 
 # abstraction ------------------------
 
-from abc import ABC, abstractmethod
+# from abc import ABC, abstractmethod
 
 
-class abstract(ABC):
-    @abstractmethod
-    def parameter(self):
-        pass
+# class abstract(ABC):
+#     @abstractmethod
+#     def parameter(self):
+#         pass
 
 
-class Square(abstract):
-    def __init__(self,side):
-        self.side = side
+# class Square(abstract):
+#     def __init__(self,side):
+#         self.side = side
 
-    def parameter(self):
-        print('helloo')
+#     def parameter(self):
+#         print('helloo')
 
-objj = Square(4)
+# objj = Square(4)
 
+
+# Dunder methods -------------------------------\
+
+# class LearnDunder:
+
+#     language = "python"
+
+#     def __init__(self,name):
+#         self.name = name
+        
+#     def __str__(self):
+#         return f'helloooo {self.name}'
+
+
+# obj = LearnDunder('haram')
+# obj = LearnDunder('haris')
+# obj = LearnDunder('hasnain')
+
+# print(obj)
+    
+
+
+# class LearnDunder:
+
+#     language = "python"
+
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+        
+
+#     def __str__(self):
+#         return f'helloooo {self.name}'
+    
+#     def __add__(self, self2):
+#         sum = 0
+#         for i in self2:
+#             sum = sum + i.age
+#         return f'{self.age + sum}'
+    
+# obj = LearnDunder('haram',20)
+# obj2 = LearnDunder('Haris',15)
+# obj3 = LearnDunder('Hasnain',9)
+
+
+# print(obj + (obj2,obj3))
+
+
+# dunder method practice
+
+class Practice_of_dunder_method:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f'my name is {self.name} and i am {self.age} old'
+    
+    def __add__(self, self2):
+        return f'{self.age + self2.age}'
+
+
+call = Practice_of_dunder_method('HASNAIN',9)
+call2 = Practice_of_dunder_method('haris',15)
+
+
+print(call)
+print(call2)
+
+print(call + call2)
