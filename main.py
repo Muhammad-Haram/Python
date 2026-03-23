@@ -1,6 +1,5 @@
 # print("Heyyyyy")
 
-
 # Numbers
 a =1 #integer
 a = 1.3 #float
@@ -946,24 +945,134 @@ num3 -= 20
 
 
 # dunder method practice
+# class Practice_of_dunder_method:
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
 
-class Practice_of_dunder_method:
-    def __init__(self,name,age):
-        self.name = name
-        self.age = age
-
-    def __str__(self):
-        return f'my name is {self.name} and i am {self.age} old'
+#     def __str__(self):
+#         return f'my name is {self.name} and i am {self.age} old'
     
-    def __add__(self, self2):
-        return f'{self.age + self2.age}'
+#     def __add__(self, self2):
+#         return f'{self.age + self2.age}'
+
+# call = Practice_of_dunder_method('HASNAIN',9)
+# call2 = Practice_of_dunder_method('haris',15)
 
 
-call = Practice_of_dunder_method('HASNAIN',9)
-call2 = Practice_of_dunder_method('haris',15)
+# print(call)
+# print(call2)
+
+# print(call + call2)
 
 
-print(call)
-print(call2)
+# Decorator -------------------------------------------
 
-print(call + call2)
+
+# def hideco(hello_func):
+#     def wrapper(*args,**kwargs):
+#         print('hi deco before')
+#         hello_func(*args,**kwargs)
+#         print('hi deco after')
+#     return wrapper
+
+
+# @hideco
+# def hello(a,b):
+#     print(f'the total is {a + b}')
+
+# hello(10,20)
+
+# args and kwargs-----------------------------------------------------
+
+# def addition(*args):
+
+#     sum = 0
+#     for i in args:
+#         sum += i
+
+#     print(sum)
+
+# addition(10,20,30,40,50,50)
+
+
+# def addition(**kwargs):
+#     for i in kwargs:
+#         print(f'{i} : {kwargs[i]}')
+
+# addition(name = "Haram" ,age = 23 ,designation = "Unemployed")
+
+# comphrehension ---------------------------------------------------------------------
+
+# num = 13
+
+# print('even') if num%2 == 0 else print('odd')
+
+# l = [i for i in range(1,21) if i%2 == 0]
+# print(l)
+
+# l = []
+# for i in range(1,21):
+#     if (i%2 == 0):
+#         l.append(i)
+
+# print(l)
+
+# l = [i for i in range(1,31) if i%2 != 0]
+
+# l = {i : i**2 for i in range(1,31)}
+
+# print(l)
+
+# lambda function ------------------------------------------------------
+
+# addition = lambda a,b : a + b
+# addition = lambda a : "even" if a%2 == 0 else "odd" 
+
+
+# # print(addition(13))
+
+# l = []
+# for i in range(1,21):
+#     if i%2 == 0:
+#         l.append(i)
+# print(l)
+
+# l = {i:i**2 for i in range(1,11)}
+
+# print(l)
+
+
+# # map -----
+
+# numbers = [1,2,3,4,5,6,7,8,9,10]
+
+# result = map(lambda x: x*2, numbers)
+
+# print(list(result))
+
+# def double(x):
+#     return x*2
+
+# result = map(double, numbers)
+
+# print(list(result))
+
+# filter----------
+
+find_even = [1,2,3,4,5,6,7,8,9,10]
+
+# def even(x):
+#     if x%2 == 0:
+#         return True
+#     else:
+#         return False
+    
+# got_even = filter(even,find_even)
+
+# print(list(got_even))
+
+# try in lambda ---------------
+
+result = filter(lambda x: True if x%2==0 else False,find_even)
+print(list(result))
